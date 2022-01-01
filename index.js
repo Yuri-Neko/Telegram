@@ -265,7 +265,6 @@ case 'igdl':
                 break
 //lain nya
 case 'hentai':
-  case 'ass':
     case 'blowjob':
       case 'cum':
         case 'ero':
@@ -280,6 +279,16 @@ case 'hentai':
                 result = await fetchJson(url)
                 await lol.replyWithPhoto({ url: result.url })
                 break
+
+case 'ass':
+    reply("Tunggu Bentar") 
+    url = `https://docs-jojoapi.herokuapp.com/api/nsfw/ass?apikey=Syaa`
+    result = await fetchJson(url) 
+    await lol.replyWithPhoto({ url: result.url }) 
+    break
+
+
+
 case 'loli':
   case 'randomwaifu':
       case 'husbu':
