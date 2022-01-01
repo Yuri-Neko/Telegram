@@ -287,7 +287,12 @@ case 'ass':
     await lol.replyWithPhoto({ url: result.url }) 
     break
 
-
+case'Yuri':
+     reply("Klo Gagal Apikey Abis") 
+     url = `https://api-alphabot.herokuapp.com/api/nsfw/v2/pussy?apikey=Alphabot`
+     result = await fetchJson(url)
+                await lol.replyWithPhoto({ url: result.url })
+                break
 
 case 'loli':
   case 'randomwaifu':
